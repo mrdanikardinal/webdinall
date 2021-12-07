@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <div class="p-2 bd-highlight">
-                    <a href="#" class="text-decoration-none">
+                    <a href="/contents" class="text-decoration-none">
                         Documentation
                     </a>
                 </div>
