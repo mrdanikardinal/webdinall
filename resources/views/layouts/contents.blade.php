@@ -1,35 +1,8 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.main')
+@section('isContents')
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-</head>
-
-<body>
-    <!-- <div class="container-fluid">
-        <div class="container">
-            <div class="row row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 border">
-                    One of three columns
-                </div>
-                <div class="col-6">
-                    One of three columns
-                </div>
-                <div class="col-2">
-                    One of three columns
-                </div>
-            </div>
-        </div> -->
-
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
+    <section class="">
+        <div class="row flex-nowrap py-5">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 border-end">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -43,7 +16,8 @@
                         </li>
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
@@ -74,16 +48,20 @@
                                 <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        1</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        2</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        3</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
+                                        4</a>
                                 </li>
                             </ul>
                         </li>
@@ -94,8 +72,10 @@
                     </ul>
                     <hr>
                     <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1">loser</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
@@ -111,10 +91,44 @@
                 </div>
             </div>
             <div class="col-8 py-3 border-end">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi earum nobis, explicabo fuga ullam incidunt tempora cupiditate excepturi consequatur, rem at nisi? Tempora, officia? Nemo repellendus optio accusantium doloremque!</p>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                        <button type="button" class="btn btn-outline-light">Light</button>
+                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi earum nobis, explicabo fuga
+                            ullam
+                            incidunt tempora cupiditate excepturi consequatur, rem at nisi? Tempora, officia? Nemo repellendus optio
+                            accusantium doloremque!</p>
+                    </div>
+                </div>
+            
+              
             </div>
             <div class="col-2 py-3">
                 <div class="row">
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction Start menu</p>
+                    <p>Introduction</p>
                     <p>Introduction Start menu</p>
                     <p>Introduction Start menu</p>
                     <p>Introduction Start menu</p>
@@ -132,18 +146,5 @@
 
             </div>
         </div>
-    </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-</body>
-
-</html>
+    </section>
+@endsection()

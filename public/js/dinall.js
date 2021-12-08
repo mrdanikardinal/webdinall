@@ -6,7 +6,10 @@ if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
   
     if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
+        if(toggleSwitch !==null){
+            toggleSwitch.checked = true;
+        }
+            
     }
 }
 
@@ -19,5 +22,8 @@ function switchTheme(e) {
           localStorage.setItem('theme', 'light');
     }    
 }
+if (toggleSwitch !==null){
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+}
